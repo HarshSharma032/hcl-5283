@@ -1,4 +1,6 @@
-package com.hcl.library.model;
+package com.hcl.library.Model;
+
+
 
 public class Magazine extends LibraryItem {
     private int issueNumber;
