@@ -26,7 +26,7 @@ public class EmployeeAnalytics {
                 e(7, "Sara",   "HR",           62000, "2017-09-09", "Recruiting", "Payroll"),
                 e(8, "Vikram", "Finance",      80000, "2015-04-30", "Excel", "SQL"));
 
-        // Q1: Names of Engineering employees, sorted by salary descending
+
         List<String> q1 = emps.stream()
                 .filter(emp -> emp.dept().equals("Engineering"))
                 .sorted((s1, s2) -> s2.salary().compareTo(s1.salary()))
@@ -36,7 +36,7 @@ public class EmployeeAnalytics {
 
         System.out.println("Q1: " + q1);
 
-        // Q2: Names of the top 3 earners overall
+
         List<String> q2 = emps.stream()
                 .sorted((s1, s2) -> s2.salary().compareTo(s1.salary()))
                 .limit(3)
