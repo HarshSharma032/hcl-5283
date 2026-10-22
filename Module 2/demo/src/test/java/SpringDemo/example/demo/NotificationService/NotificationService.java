@@ -1,0 +1,5 @@
+package SpringDemo.example.demo.Field1.NotificationService;
+
+public interface NotificationService {
+    
+}
