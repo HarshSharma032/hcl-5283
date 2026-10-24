@@ -12,7 +12,7 @@ import java.util.List;
 public class EmployeeController {
 
     @Autowired
-    private EmployeeServiceImp employeeServiceImp;
+    private EmployeeServiceImp employeeService;
 
     @GetMapping("/")
     public String welcomeMsg() {
@@ -20,11 +20,17 @@ public class EmployeeController {
     }
 
     @GetMapping("/addemp")
-    public String addnewEmployee() {
-        return employeeServiceImp.addEmp();
+    public String addEmp() {
+        return employeeService.addEmp();
     }
+
+    @GetMapping("/addempbulk")
+    public String addEmpBulk() {
+        return employeeService.addEmpBulk();
+    }
+
     @GetMapping("/getemp")
-    public List<Employee> getEmp(){
-        return employeeServiceImp.getEmp();
+    public List<Employee> getEmp() {
+        return employeeService.getEmp();
     }
 }
