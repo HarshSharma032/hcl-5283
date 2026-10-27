@@ -16,6 +16,8 @@ function SampleCode() {
     function changePointer(){
         setPointer(pointer-2);
     }
+    
+
   return (
     <div>
         {/* <h2>Employee Details</h2>
