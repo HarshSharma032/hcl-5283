@@ -12,6 +12,7 @@ public class EmployeeMain {
         System.out.println("Hashcode of e2: " + e2.hashCode());
 
         System.out.println(e1 == e2);
+
     }
 }
 
